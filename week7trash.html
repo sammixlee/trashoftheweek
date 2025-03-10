@@ -8,69 +8,29 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
   />
 
-<header style="text-align: center;">
-  <img src="images/logo.svg" alt="Site Logo" width="1000px">
+<header>
+  <a href="index.html">
+    <img src="images/logo.svg" alt="Site Logo" class="site-logo">
+  </a>
 </header>
 
 
-
   
-  <style>
-    body {
-      background-color: lightblue;
-      color: lightpink;
-      font-family: "Times New Roman", serif;
-      font-size: 18px;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-    }
-    .wrapper {
-      width: 1000px;
-      margin: 0 auto;
-      padding: 20px;
-      background: #1A2D28;
-      border-radius: 10px;
-    }
-    nav {
-      margin-top: 10px;
-      text-align: center;
-      background: #101923;
-      padding: 10px 0;
-    }
-    nav a {
-      display: inline-block;
-      margin: 0 10px;
-      padding: 10px 16px;
-      color: #CDF3CC;
-      background-color: #2E3B40;
-      text-decoration: none;
-      font-weight: bold;
-      border: 2px solid transparent;
-      border-radius: 6px;
-      transition: background-color 0.2s ease;
-    }
-    nav a:hover {
-      background-color: #385057;
-      color: indianred;
-    }
-    h1, h2, h3 {
-      color: lightblue;
-      text-align: center;
-    }
-  </style>
+<link rel="stylesheet" href="twp.css" type="text/css">
+
 </head>
 <body>
   <div class="wrapper">
     <h1>Trash of the Week:<br><em>Week 7- Spring Cleaning!</em></h1>
     <h2><em>by Samantha Lee</em></h2>
-    <nav>
-      <a href="#sec-preface">Preface</a>
-      <a href="#sec-overview">Overview</a>
-      <a href="#sec-gallery">Gallery</a>
-      <a href="#sec-profile">Profile</a>
-      <a href="#sec-coda">Coda</a>
-    </nav>
+<nav class="sitenav">
+  <a href="#sec-preface">Preface</a>
+  <a href="#sec-overview">Overview</a>
+  <a href="#sec-gallery">Gallery</a>
+  <a href="#sec-profile">Profile</a>
+  <a href="#sec-coda">Coda</a>
+</nav>
+
 
   <h2 id="sec-preface">Preface</h2>
   <p>
@@ -187,18 +147,20 @@
   </p>
   <p><a href="#top">Return to Top</a></p>
 
-<h2 id="sec-gallery">Gallery</h2>
-<img src="images/beret.jpg" width=150px/>
-<img src="images/capecodhoodie.jpg" width=150px/>
-<img src="images/coconutwater.jpg" width=150px/> 
-<img src="images/driverslicense.jpg" width=150px/>
-<img src="images/elfconcealer.jpg" width=150px/>
-<img src="images/highlighter.jpg" width=150px/>
-<img src="images/lipstick.jpg" width=150px/>
-<img src="images/tama.jpg" width=150px/>
-<img src="images/whitedress.jpg" width=150px/>
-<p><a href="#top">Return to Top</a></p>
-
+    
+   <h2 id="sec-gallery">Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="images/beret.jpg" alt="Beret"></div>
+      <div class="gallery-item"><img src="images/capecodhoodie.jpg" alt="Cape Cod Hoodie"></div>
+      <div class="gallery-item"><img src="images/coconutwater.jpg" alt="Coconut Water"></div>
+      <div class="gallery-item"><img src="images/driverslicense.jpg" alt="Driver's License"></div>
+      <div class="gallery-item"><img src="images/elfconcealer.jpg" alt="Elf Concealer"></div>
+      <div class="gallery-item"><img src="images/highlighter.jpg" alt="Highlighter"></div>
+      <div class="gallery-item"><img src="images/lipstick.jpg" alt="Lipstick"></div>
+      <div class="gallery-item"><img src="images/tama.jpg" alt="Tamagotchi"></div>
+      <div class="gallery-item"><img src="images/whitedress.jpg" alt="White Dress"></div>
+    </div>
+    <p><a href="#top">Return to Top</a></p>
 <h2 id="sec-profile">Item Data</h2>
 <table border="3">
   <tr>

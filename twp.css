@@ -1,0 +1,84 @@
+body {
+    background-color: lightblue;
+    color: lightpink;
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #1A2D28;
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.site-logo {
+    height: 32px;
+}
+
+.sitenav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background: pink;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.sitenav a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background: pink;
+    border-right: solid white 4px;
+    padding: 8px;
+}
+
+.sitenav a:hover {
+    color: pink;
+    background: white;
+}
+
+/* Gallery Grid Styling */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: start;
+}
+
+.gallery-item {
+    width: 150px;
+    text-align: center;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+td, th {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+td i.fa-heart {
+    color: red;
+}
+
+td i.fa-money-bill {
+    color: green;
+}

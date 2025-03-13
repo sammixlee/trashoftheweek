@@ -17,7 +17,7 @@ body {
 }
 
 .top-header {
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: space-between;
     background-color: #A97374;
@@ -25,6 +25,7 @@ body {
     border-radius: 15px;
     margin-bottom: 20px; 
 	margin-top: 10px;
+	text-align:center;
 }
 
 .logo-wrap {
@@ -42,12 +43,14 @@ body {
 
 
 .top-header-links {
-    display: flex;
+	text-align: center
     gap: 15px;
 }
 
 .top-header-links a {
     font-weight: bold;
+	border-radius: 5px;
+	padding: 20px;
     color: #1A2D28;
     font-size: 20px;
 }
@@ -128,7 +131,7 @@ td i.fa-money-bill {
     color: #0D3609;
 }
 
-/*return to header buttons*/
+/*my buttons*/
 .top-button {
     display: block;
     width: fit-content;
@@ -145,14 +148,13 @@ td i.fa-money-bill {
 }
 
 .alt-button {
-    display: block;
     width: fit-content;
-    margin: 20px auto;
-    padding: 10px 15px;
-    font-size: 16px;
-    color: white;
-    background-color: #c2787a;
-    text-align: left;
+    margin: 10px auto;
+    padding: 5px 10px;
+    font-size: 15px;
+    color: #C19E9F;
+    background-color: #712E48;
+    text-align: end;
     border-radius: 3px;
     font-weight: bold;
     transition: background-color 0.3s ease;
@@ -163,5 +165,5 @@ td i.fa-money-bill {
 }
 
 .alt-button:hover {
-    background-color: #542F30;
+    background-color: #8A3031;
 }

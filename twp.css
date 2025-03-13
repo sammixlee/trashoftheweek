@@ -1,15 +1,16 @@
 body {
-    background-color: lightblue;
-    color: lightpink;
+    background-color: #E7C9CA;
+    color: #F2EEEE;
     font-family: "Times New Roman", serif;
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.8;
     margin: 0;
-    padding: 0;
+    padding: 5px;
 }
 
+
 .wrapper {
-    width: 1000px;
+    width: 900px;
     margin: 0 auto;
     padding: 20px;
     background: #1A2D28;
@@ -18,11 +19,11 @@ body {
 
 header {
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 5;
 }
 
 .site-logo {
-    height: 32px;
+    height: 60px;
 }
 
 .sitenav {
@@ -30,7 +31,9 @@ header {
     grid-template-columns: repeat(5, 1fr);
     background: pink;
     text-align: center;
-    padding: 10px 0;
+    padding: 5px;
+	border-radius: 15px;
+	background: #EECFD0;
 }
 
 .sitenav a {
@@ -48,21 +51,35 @@ header {
     background: white;
 }
 
-/* Gallery Grid Styling */
+
+/*gallery grid*/
+
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 20px;
     justify-items: center;
     align-items: start;
+    justify-content: space-between;
 }
 
 .gallery-item {
-    width: 150px;
+    width: 300px;
     text-align: center;
 }
 
-/* Table Styling */
+.gallery-item p {
+    margin: 0.25em 0;
+    line-height: 135%;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* table stuff */
 table {
     width: 100%;
     border-collapse: collapse;

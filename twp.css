@@ -8,42 +8,68 @@ body {
     padding: 5px;
 }
 
-
 .wrapper {
-    width: 900px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 20px;
-    background: #1A2D28;
+    background-color: #421532;
     border-radius: 10px;
 }
 
-header {
-    text-align: center;
-    padding: 20px 5;
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #EECFD0;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.logo-wrap {
+    display: flex;
+    align-items: center;
 }
 
 .site-logo {
-    height: 60px;
+    height: 32px;
+}
+
+.top-header-links {
+    display: flex;
+    gap: 15px;
+}
+
+.top-header-links a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #1A2D28;
+    font-size: 16px;
+}
+
+.top-header-links a:hover {
+    color: white;
 }
 
 .sitenav {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    background: pink;
     text-align: center;
     padding: 5px;
-	border-radius: 15px;
-	background: #EECFD0;
+    border-radius: 15px;
+    background: #EECFD0;
 }
 
 .sitenav a {
     display: inline-block;
     text-decoration: none;
     font-weight: bold;
-    color: white;
-    background: pink;
-    border-right: solid white 4px;
+    color: #1A2D28;
     padding: 8px;
+    border-right: solid white 4px;
+}
+
+.sitenav a:last-child {
+    border-right: none;
 }
 
 .sitenav a:hover {
@@ -51,12 +77,9 @@ header {
     background: white;
 }
 
-
-/*gallery grid*/
-
 .gallery-grid {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, auto);
     grid-row-gap: 20px;
     justify-items: center;
     align-items: start;
@@ -76,10 +99,9 @@ header {
 .gallery-item img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
-
-/* table stuff */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -98,4 +120,25 @@ td i.fa-heart {
 
 td i.fa-money-bill {
     color: green;
+}
+
+
+/*return to header buttons*/
+.top-button {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #915C5D;
+    text-decoration: underline;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.top-button:hover {
+    background-color: #542F30;
 }

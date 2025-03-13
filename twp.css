@@ -33,7 +33,7 @@ body {
 }
 
 .site-logo {
-    height: 60px;
+    height: 32px;
 }
 
 .top-header-links {
@@ -114,16 +114,16 @@ td, th {
     border: 2px solid black;
     padding: 8px;
     text-align: center;
+	background-color: #C88D8E;
 }
 
 td i.fa-heart {
-    color: red;
+    color: #481819;
 }
 
 td i.fa-money-bill {
-    color: green;
+    color: #0D3609;
 }
-
 
 /*return to header buttons*/
 .top-button {

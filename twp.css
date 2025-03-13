@@ -61,9 +61,9 @@ body {
 
 .sitenav {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 2fr);
     text-align: center;
-    padding: 5px;
+    padding: 3px;
     border-radius: 15px;
     background: #EECFD0;
 }
@@ -72,8 +72,8 @@ body {
     display: inline-block;
     font-weight: bold;
     color: #1A2D28;
-    padding: 8px;
-    border-right: solid white 4px;
+    padding: 5px;
+    border-right: solid white 2px;
 }
 
 .sitenav a:last-child {

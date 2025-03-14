@@ -147,6 +147,10 @@ td i.fa-money-bill {
     transition: background-color 0.3s ease;
 }
 
+.top-button:hover {
+    background-color: #542F30;
+}
+
 .alt-button {
     width: fit-content;
     margin: 10px auto;
@@ -160,10 +164,24 @@ td i.fa-money-bill {
     transition: background-color 0.3s ease;
 }
 
-.top-button:hover {
-    background-color: #542F30;
+.alt-button:hover {
+    background-color: #8A3031;
 }
 
-.alt-button:hover {
+
+.index-button{
+	width: fit-content;
+    margin: 10px auto;
+    padding: 5px 10px;
+    font-size: 15px;
+    color: #C19E9F;
+    background-color: #712E48;
+    text-align: end;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.index-button:hover {
     background-color: #8A3031;
 }

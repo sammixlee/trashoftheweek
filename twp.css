@@ -16,7 +16,7 @@ body {
     border-radius: 10px;
 }
 
-/* Top Header */
+/* Top  */
 .top-header {
     display: block;
     align-items: center;
@@ -62,7 +62,7 @@ body {
     text-decoration: underline;
 }
 
-/* Site Navigation */
+/* nav */
 .sitenav {
     display: grid;
     grid-template-columns: repeat(7, 2fr);
@@ -91,7 +91,7 @@ body {
     text-decoration: underline;
 }
 
-/* Gallery Grid */
+/* gallery */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -127,7 +127,7 @@ body {
     font-family: "Arial", sans-serif;
 }
 
-/* Table Styling */
+/* table  */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -215,7 +215,7 @@ td i.fa-money-bill {
     text-decoration: underline;
 }
 
-/* Style All Links */
+/* links oretty */
 a {
     color: #ff1493;
     font-weight: bold;
@@ -227,7 +227,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Lists Styling */
+/* list */
 .ranks {
     background-color: #FFEFF2;
     padding: 20px;
@@ -260,12 +260,12 @@ a:hover {
     font-size: 20px;
     margin-bottom: 10px;
     text-align: center;
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: "Comic Sans MS", sans-serif;
 }
 
 .list ol li {
     font-size: 16px;
     color: #5A3E4F;
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: "Comic Sans MS", sans-serif;
     padding: 5px 0;
 }

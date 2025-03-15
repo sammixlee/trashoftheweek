@@ -26,6 +26,7 @@ body {
     margin-bottom: 20px; 
 	margin-top: 10px;
 	text-align:center;
+	text-decoration: none;
 }
 
 .logo-wrap {
@@ -87,28 +88,39 @@ body {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-row-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     justify-items: center;
     align-items: start;
-    justify-content: space-between;
+    max-width: 900px;
+    margin: auto;
 }
 
 .gallery-item {
-    width: 300px;
+    width: 100%;
+    max-width: 250px;
     text-align: center;
-}
-
-.gallery-item p {
-    margin: 0.25em 0;
-    line-height: 135%;
+    background: #FFEFF2;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .gallery-item img {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    display: block;
 }
+
+.gallery-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #5A3E4F;
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
+}
+
 
 table {
     width: 100%;
@@ -184,4 +196,61 @@ td i.fa-money-bill {
 
 .index-button:hover {
     background-color: #8A3031;
+}
+
+/* style all links */
+a {
+    color: #ff1493; 
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff69b4; 
+    text-decoration: underline; 
+}
+
+/*lists styling*/.ranks {
+    background-color: #FFEFF2;
+    padding: 20px;
+    border-radius: 40px;
+    margin: 30px auto;
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+}
+
+.ranks h2 {
+    color: #D63384;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.list {
+    max-width: flex;
+    padding: 15px;
+    background:#F3DEDE;
+    border-radius:50px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.list:hover {
+    transform: scale(1.01);
+}
+
+.list h3 {
+    color: #FF69B4;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.list ol li {
+    font-size: 16px;
+    color: #5A3E4F;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }

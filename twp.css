@@ -16,6 +16,7 @@ body {
     border-radius: 10px;
 }
 
+/* Top Header */
 .top-header {
     display: block;
     align-items: center;
@@ -23,10 +24,10 @@ body {
     background-color: #A97374;
     padding: 10px 20px;
     border-radius: 15px;
-    margin-bottom: 20px; 
-	margin-top: 10px;
-	text-align:center;
-	text-decoration: none;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
 }
 
 .logo-wrap {
@@ -37,29 +38,31 @@ body {
 }
 
 .site-logo {
-    height: 50px; 
-    width: auto; 
+    height: 50px;
+    width: auto;
     display: block;
 }
 
-
 .top-header-links {
-	text-align: center
+    text-align: center;
     gap: 15px;
 }
 
 .top-header-links a {
     font-weight: bold;
-	border-radius: 5px;
-	padding: 20px;
+    border-radius: 5px;
+    padding: 20px;
     color: #1A2D28;
     font-size: 20px;
+    text-decoration: none;
 }
 
 .top-header-links a:hover {
     color: white;
+    text-decoration: underline;
 }
 
+/* Site Navigation */
 .sitenav {
     display: grid;
     grid-template-columns: repeat(7, 2fr);
@@ -75,6 +78,7 @@ body {
     color: #1A2D28;
     padding: 5px;
     border-right: solid white 2px;
+    text-decoration: none;
 }
 
 .sitenav a:last-child {
@@ -84,8 +88,10 @@ body {
 .sitenav a:hover {
     color: pink;
     background: white;
+    text-decoration: underline;
 }
 
+/* Gallery Grid */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -121,18 +127,25 @@ body {
     font-family: "Arial", sans-serif;
 }
 
-
+/* Table Styling */
 table {
     width: 100%;
     border-collapse: collapse;
     background: white;
+    text-align: left;
 }
 
-td, th {
+th {
+    background-color: #C88D8E;
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+
+td {
     border: 2px solid black;
     padding: 8px;
-    text-align: center;
-	background-color: #C88D8E;
+    background-color: #766565;
 }
 
 td i.fa-heart {
@@ -143,7 +156,7 @@ td i.fa-money-bill {
     color: #0D3609;
 }
 
-/*my buttons*/
+/* Buttons */
 .top-button {
     display: block;
     width: fit-content;
@@ -152,7 +165,7 @@ td i.fa-money-bill {
     font-size: 16px;
     color: white;
     background-color: #915C5D;
-    text-decoration: underline;
+    text-decoration: none;
     text-align: center;
     border-radius: 5px;
     font-weight: bold;
@@ -161,6 +174,7 @@ td i.fa-money-bill {
 
 .top-button:hover {
     background-color: #542F30;
+    text-decoration: underline;
 }
 
 .alt-button {
@@ -170,46 +184,51 @@ td i.fa-money-bill {
     font-size: 15px;
     color: #C19E9F;
     background-color: #712E48;
-    text-align: end;
+    text-align: center;
     border-radius: 3px;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    text-decoration: none;
 }
 
 .alt-button:hover {
     background-color: #8A3031;
+    text-decoration: underline;
 }
 
-
-.index-button{
-	width: fit-content;
+.index-button {
+    width: fit-content;
     margin: 10px auto;
     padding: 5px 10px;
     font-size: 15px;
     color: #C19E9F;
     background-color: #712E48;
-    text-align: end;
+    text-align: center;
     border-radius: 3px;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    text-decoration: none;
 }
 
 .index-button:hover {
     background-color: #8A3031;
+    text-decoration: underline;
 }
 
-/* style all links */
+/* Style All Links */
 a {
-    color: #ff1493; 
+    color: #ff1493;
     font-weight: bold;
+    text-decoration: none;
 }
 
 a:hover {
-    color: #ff69b4; 
-    text-decoration: underline; 
+    color: #ff69b4;
+    text-decoration: underline;
 }
 
-/*lists styling*/.ranks {
+/* Lists Styling */
+.ranks {
     background-color: #FFEFF2;
     padding: 20px;
     border-radius: 40px;
@@ -217,28 +236,23 @@ a:hover {
     width: 80%;
     max-width: 900px;
     text-align: center;
-}
-
-.ranks h2 {
-    color: #D63384;
-    font-size: 26px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .list {
-    max-width: flex;
-    padding: 15px;
-    background:#F3DEDE;
-    border-radius:50px;
+    flex: 1;
+    padding: 20px;
+    background: #F3DEDE;
+    border-radius: 20px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
     text-align: left;
+    transition: transform 0.3s ease;
 }
 
 .list:hover {
-    transform: scale(1.01);
+    transform: scale(1.03);
 }
 
 .list h3 {
@@ -253,4 +267,5 @@ a:hover {
     font-size: 16px;
     color: #5A3E4F;
     font-family: "Comic Sans MS", cursive, sans-serif;
+    padding: 5px 0;
 }
